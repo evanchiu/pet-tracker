@@ -53,10 +53,16 @@ export default {
     };
   },
   async mounted() {
+    // Get list of all pets and user data
     const petIds = await axios.get("https://api.guildwars2.com/v2/pets");
     const userData = await axios.get("/data/princess-cuddles.json");
+
+    // Set global fields
     this.username = userData.data.username;
+
+    // For each pet
     petIds.data.forEach((petId) => {
+      // If user data is available for this pet, use it
       if (userData.data.pets[petId]) {
         const pet = userData.data.pets[petId];
         this.pets.all.push(pet);
@@ -68,6 +74,7 @@ export default {
           this.pets.uncaught.push(pet);
         }
       } else {
+        // If not user data is available, add it to all and uncaught
         this.pets.all.push({ id: petId });
         this.pets.uncaught.push({ id: petId });
       }

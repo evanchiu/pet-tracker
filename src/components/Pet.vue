@@ -30,18 +30,17 @@ export default {
       wiki: "",
     };
   },
-  mounted() {
-    axios
-      .get(`https://api.guildwars2.com/v2/pets/${this.id}`)
-      .then((response) => {
-        this.name = response.data.name;
-        this.wiki = `https://wiki.guildwars2.com/wiki/${this.name.replace(
-          " ",
-          "_"
-        )}`;
-        this.description = response.data.description;
-        this.icon = response.data.icon;
-      });
+  async mounted() {
+    // Get pet details via API
+    const response = await axios.get(`https://api.guildwars2.com/v2/pets/${this.id}`);
+
+    // Wiki page names don't have spaces, they have underscores
+    const wikiName = response.data.name.replace(" ", "_");
+
+    this.name = response.data.name;
+    this.wiki = `https://wiki.guildwars2.com/wiki/${wikiName}`;
+    this.description = response.data.description;
+    this.icon = response.data.icon;
   },
 };
 </script>
