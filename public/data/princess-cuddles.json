@@ -1,0 +1,335 @@
+{
+  "username": "Princess Cuddles",
+  "pets": {
+    "1": {
+      "id": 1,
+      "name": "Juvenile Jungle Stalker",
+      "caught": true,
+      "nickname": "Cocoa"
+    },
+    "2": {
+      "id": 2,
+      "name": "Juvenile Boar",
+      "caught": true,
+      "nickname": "Snuffy"
+    },
+    "3": {
+      "id": 3,
+      "name": "Juvenile Lynx",
+      "caught": true,
+      "nickname": "Linus"
+    },
+    "4": {
+      "id": 4,
+      "name": "Juvenile Krytan Drakehound",
+      "caught": true,
+      "nickname": "Rover"
+    },
+    "5": {
+      "id": 5,
+      "name": "Juvenile Brown Bear",
+      "caught": true,
+      "nickname": "Sgt Hugs"
+    },
+    "6": {
+      "id": 6,
+      "name": "Juvenile Carrion Devourer",
+      "caught": false,
+      "nickname": ""
+    },
+    "7": {
+      "id": 7,
+      "name": "Juvenile Salamander Drake",
+      "caught": false,
+      "nickname": ""
+    },
+    "8": {
+      "id": 8,
+      "name": "Juvenile Alpine Wolf",
+      "caught": true,
+      "nickname": "Wolfie"
+    },
+    "9": {
+      "id": 9,
+      "name": "Juvenile Snow Leopard",
+      "caught": true,
+      "nickname": "Frosty"
+    },
+    "10": {
+      "id": 10,
+      "name": "Juvenile Raven",
+      "caught": true,
+      "nickname": "Poe"
+    },
+    "11": {
+      "id": 11,
+      "name": "Juvenile Jaguar",
+      "caught": true,
+      "nickname": "Shadow"
+    },
+    "12": {
+      "id": 12,
+      "name": "Juvenile Marsh Drake",
+      "caught": false,
+      "nickname": ""
+    },
+    "13": {
+      "id": 13,
+      "name": "Juvenile Blue Moa",
+      "caught": false,
+      "nickname": ""
+    },
+    "14": {
+      "id": 14,
+      "name": "Juvenile White Moa",
+      "caught": true,
+      "nickname": "Creme Puff"
+    },
+    "15": {
+      "id": 15,
+      "name": "Juvenile Pink Moa",
+      "caught": true,
+      "nickname": "Pink Flufferton"
+    },
+    "16": {
+      "id": 16,
+      "name": "Juvenile Black Moa",
+      "caught": false,
+      "nickname": ""
+    },
+    "17": {
+      "id": 17,
+      "name": "Juvenile Red Moa",
+      "caught": false,
+      "nickname": ""
+    },
+    "18": {
+      "id": 18,
+      "name": "Juvenile Ice Drake",
+      "caught": true,
+      "nickname": ""
+    },
+    "19": {
+      "id": 19,
+      "name": "Juvenile River Drake",
+      "caught": true,
+      "nickname": "Spike"
+    },
+    "20": {
+      "id": 20,
+      "name": "Juvenile Murellow",
+      "caught": false,
+      "nickname": ""
+    },
+    "21": {
+      "id": 21,
+      "name": "Juvenile Shark",
+      "caught": true,
+      "nickname": "Jaws"
+    },
+    "22": {
+      "id": 22,
+      "name": "Juvenile Fern Hound",
+      "caught": true,
+      "nickname": "Rainbow"
+    },
+    "23": {
+      "id": 23,
+      "name": "Juvenile Black Bear",
+      "caught": true,
+      "nickname": "Smokey"
+    },
+    "24": {
+      "id": 24,
+      "name": "Juvenile Polar Bear",
+      "caught": true,
+      "nickname": "Rolly Poley"
+    },
+    "25": {
+      "id": 25,
+      "name": "Juvenile Arctodus",
+      "caught": true,
+      "nickname": "Barry"
+    },
+    "26": {
+      "id": 26,
+      "name": "Juvenile Whiptail Devourer",
+      "caught": false,
+      "nickname": ""
+    },
+    "27": {
+      "id": 27,
+      "name": "Juvenile Lashtail Devourer",
+      "caught": false,
+      "nickname": ""
+    },
+    "28": {
+      "id": 28,
+      "name": "Juvenile Hyena",
+      "caught": true,
+      "nickname": ""
+    },
+    "29": {
+      "id": 29,
+      "name": "Juvenile Wolf",
+      "caught": true,
+      "nickname": "Wolfgang Puck"
+    },
+    "30": {
+      "id": 30,
+      "name": "Juvenile Owl",
+      "caught": true,
+      "nickname": "Hooters"
+    },
+    "31": {
+      "id": 31,
+      "name": "Juvenile Eagle",
+      "caught": true,
+      "nickname": "Eaglet"
+    },
+    "32": {
+      "id": 32,
+      "name": "Juvenile White Raven",
+      "caught": false,
+      "nickname": ""
+    },
+    "33": {
+      "id": 33,
+      "name": "Juvenile Forest Spider",
+      "caught": false,
+      "nickname": ""
+    },
+    "34": {
+      "id": 34,
+      "name": "Juvenile Jungle Spider",
+      "caught": false,
+      "nickname": ""
+    },
+    "35": {
+      "id": 35,
+      "name": "Juvenile Cave Spider",
+      "caught": false,
+      "nickname": ""
+    },
+    "36": {
+      "id": 36,
+      "name": "Juvenile Black Widow Spider",
+      "caught": false,
+      "nickname": ""
+    },
+    "37": {
+      "id": 37,
+      "name": "Juvenile Warthog",
+      "caught": true,
+      "nickname": "Pumba"
+    },
+    "38": {
+      "id": 38,
+      "name": "Juvenile Siamoth",
+      "caught": false,
+      "nickname": ""
+    },
+    "39": {
+      "id": 39,
+      "name": "Juvenile Pig",
+      "caught": true,
+      "nickname": "Oinkers"
+    },
+    "40": {
+      "id": 40,
+      "name": "Juvenile Armor Fish",
+      "caught": false,
+      "nickname": ""
+    },
+    "41": {
+      "id": 41,
+      "name": "Juvenile Blue Jellyfish",
+      "caught": false,
+      "nickname": ""
+    },
+    "42": {
+      "id": 42,
+      "name": "Juvenile Red Jellyfish",
+      "caught": false,
+      "nickname": ""
+    },
+    "43": {
+      "id": 43,
+      "name": "Juvenile Rainbow Jellyfish",
+      "caught": false,
+      "nickname": ""
+    },
+    "44": {
+      "id": 44,
+      "name": "Juvenile Hawk",
+      "caught": true,
+      "nickname": ""
+    },
+    "45": {
+      "id": 45,
+      "name": "Juvenile Reef Drake",
+      "caught": false,
+      "nickname": ""
+    },
+    "46": {
+      "id": 46,
+      "name": "Juvenile Smokescale",
+      "caught": false,
+      "nickname": ""
+    },
+    "47": {
+      "id": 47,
+      "name": "Juvenile Tiger",
+      "caught": true,
+      "nickname": "Tony the Grrrrrrreat!"
+    },
+    "48": {
+      "id": 48,
+      "name": "Juvenile Electric Wyvern",
+      "caught": false,
+      "nickname": ""
+    },
+    "51": {
+      "id": 51,
+      "name": "Juvenile Fire Wyvern",
+      "caught": true,
+      "nickname": "Toothless"
+    },
+    "52": {
+      "id": 52,
+      "name": "Juvenile Bristleback",
+      "caught": false,
+      "nickname": ""
+    },
+    "54": {
+      "id": 54,
+      "name": "Juvenile Cheetah",
+      "caught": true,
+      "nickname": "Shimyshimy Coco Puf"
+    },
+    "55": {
+      "id": 55,
+      "name": "Juvenile Sand Lion",
+      "caught": true,
+      "nickname": "The OG Sandy"
+    },
+    "57": {
+      "id": 57,
+      "name": "Juvenile Jacaranda",
+      "caught": false,
+      "nickname": ""
+    },
+    "59": {
+      "id": 59,
+      "name": "Juvenile Rock Gazelle",
+      "caught": false,
+      "nickname": ""
+    },
+    "61": {
+      "id": 61,
+      "name": "Juvenile Fanged Iboga",
+      "caught": false,
+      "nickname": ""
+    }
+  }
+}
