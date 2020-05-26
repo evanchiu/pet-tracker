@@ -55,5 +55,6 @@ export default {
 }
 img {
   margin: -32px;
+  align-self: center;
 }
 </style>
