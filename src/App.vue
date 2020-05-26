@@ -1,30 +1,79 @@
 <template>
   <div id="app">
-    <h1>Pet Tracker</h1>
-    <Pet v-for="pet in pets" :id="pet" :key="pet"></Pet>
+    <h1>
+      Pet Tracker<span v-if="username"> - {{ username }}</span
+      ><span v-if="filterList"> - {{ lists[filterList] }}</span>
+    </h1>
+    <span v-for="(description, listType) in lists" :key="listType">
+      <input
+        type="radio"
+        :id="listType"
+        :value="listType"
+        v-model="filterList"
+      />
+      <label :for="listType"
+        >{{ description }} ({{ pets[listType].length }})</label
+      >
+    </span>
+    <Pet
+      v-for="pet in pets[filterList]"
+      :id="pet.id"
+      :nickname="pet.nickname"
+      :caught="pet.caught || !!pet.nickname"
+      :key="pet.id"
+    ></Pet>
   </div>
 </template>
 
 <script>
-import Pet from './components/Pet.vue'
-import axios from 'axios'
+import Pet from "./components/Pet.vue";
+import axios from "axios";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Pet
+    Pet,
   },
   data() {
     return {
-      pets: []
-    }
+      lists: {
+        all: "All Pets",
+        named: "Nicknamed Pets",
+        unnamed: "Caught, not nicknamed",
+        uncaught: "Uncaught",
+      },
+      username: "",
+      pets: {
+        all: [],
+        named: [],
+        unnamed: [],
+        uncaught: [],
+      },
+      filterList: "all",
+    };
   },
-  mounted() {
-    console.log("helllo")
-    axios.get('https://api.guildwars2.com/v2/pets')
-      .then(response => this.pets = response.data)
-  }
-}
+  async mounted() {
+    const petIds = await axios.get("https://api.guildwars2.com/v2/pets");
+    const userData = await axios.get("/data/princess-cuddles.json");
+    this.username = userData.data.username;
+    petIds.data.forEach((petId) => {
+      if (userData.data.pets[petId]) {
+        const pet = userData.data.pets[petId];
+        this.pets.all.push(pet);
+        if (pet.nickname) {
+          this.pets.named.push(pet);
+        } else if (pet.caught) {
+          this.pets.unnamed.push(pet);
+        } else {
+          this.pets.uncaught.push(pet);
+        }
+      } else {
+        this.pets.all.push({ id: petId });
+        this.pets.uncaught.push({ id: petId });
+      }
+    });
+  },
+};
 </script>
 
 <style>
@@ -35,5 +84,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+label {
+  margin-right: 2em;
 }
 </style>

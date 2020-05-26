@@ -3,7 +3,9 @@
     <div class="row">
       <img :src="icon" />
       <div class="column">
-        <h2>{{ name }}</h2>
+        <h2>
+          <span v-if="nickname">{{ nickname }} - </span>{{ name }}
+        </h2>
         <p>{{ description }}</p>
         <p><a :href="wiki">wiki</a></p>
       </div>
@@ -17,6 +19,8 @@ export default {
   name: "Pet",
   props: {
     id: Number,
+    nickname: String,
+    caught: Boolean,
   },
   data() {
     return {
@@ -31,7 +35,10 @@ export default {
       .get(`https://api.guildwars2.com/v2/pets/${this.id}`)
       .then((response) => {
         this.name = response.data.name;
-        this.wiki = `https://wiki.guildwars2.com/wiki/${this.name.replace(' ', '_')}`;
+        this.wiki = `https://wiki.guildwars2.com/wiki/${this.name.replace(
+          " ",
+          "_"
+        )}`;
         this.description = response.data.description;
         this.icon = response.data.icon;
       });
