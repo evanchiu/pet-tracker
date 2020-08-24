@@ -274,8 +274,8 @@
     "46": {
       "id": 46,
       "name": "Juvenile Smokescale",
-      "caught": false,
-      "nickname": ""
+      "caught": true,
+      "nickname": "Monstrosity"
     },
     "47": {
       "id": 47,
