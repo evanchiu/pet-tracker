@@ -1,7 +1,7 @@
 <template>
   <div class="pet">
     <div class="row">
-      <img :src="icon" />
+      <img :src="icon">
       <div class="column">
         <h2>
           <span v-if="nickname">{{ nickname }} - </span>{{ name }}
@@ -16,11 +16,11 @@
 <script>
 import axios from "axios";
 export default {
-  name: "Pet",
+  name: "PetItem",
   props: {
-    id: Number,
-    nickname: String,
-    caught: Boolean,
+    id: { type: Number, required: true },
+    nickname: { type: String, default: "" },
+    caught: { type: Boolean, default: false },
   },
   data() {
     return {

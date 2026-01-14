@@ -1,38 +1,38 @@
 <template>
   <div id="app">
     <h1>
-      Pet Tracker<span v-if="username"> - {{ username }}</span
-      ><span v-if="filterList"> - {{ lists[filterList] }}</span>
+      Pet Tracker<span v-if="username"> - {{ username }}</span><span v-if="filterList"> - {{ lists[filterList] }}</span>
     </h1>
-    <span v-for="(description, listType) in lists" :key="listType">
+    <span
+      v-for="(description, listType) in lists"
+      :key="listType"
+    >
       <input
-        type="radio"
         :id="listType"
-        :value="listType"
         v-model="filterList"
-      />
-      <label :for="listType"
-        >{{ description }} ({{ pets[listType].length }})</label
+        type="radio"
+        :value="listType"
       >
+      <label :for="listType">{{ description }} ({{ pets[listType].length }})</label>
     </span>
-    <Pet
+    <PetItem
       v-for="pet in pets[filterList]"
       :id="pet.id"
+      :key="pet.id"
       :nickname="pet.nickname"
       :caught="pet.caught || !!pet.nickname"
-      :key="pet.id"
-    ></Pet>
+    />
   </div>
 </template>
 
 <script>
-import Pet from "./components/Pet.vue";
+import PetItem from "./components/PetItem.vue";
 import axios from "axios";
 
 export default {
   name: "App",
   components: {
-    Pet,
+    PetItem,
   },
   data() {
     return {
